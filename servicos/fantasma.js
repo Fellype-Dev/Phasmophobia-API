@@ -20,7 +20,7 @@ function insereFantasma(fantasmaNovo) {
     fs.writeFileSync("fantasmas.json", JSON.stringify(novaListaDeFantasmas))
 }
 
-module.exports ={
+module.exports = {
     getTodosFantasmas,
     getFantasmaPorId,
     insereFantasma
