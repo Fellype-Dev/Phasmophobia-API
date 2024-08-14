@@ -1,12 +1,12 @@
 const fs = require("fs")
 
 function getTodosFantasmas() {
-    return JSON.parse( fs.readFileSync( "fantasmas.json" ) )
+    return JSON.parse( fs.readFileSync( "../fantasmas.json" ) )
 
 }
 
 function getFantasmaPorId(id) {
-    const fantasmas = JSON.parse(fs.readFileSync("fantasmas.json"))
+    const fantasmas = JSON.parse(fs.readFileSync("../fantasmas.json"))
 
     const fantasmaFiltrado = fantasmas.filter( fantasma => fantasma.id ===id )[0]
     return fantasmaFiltrado
